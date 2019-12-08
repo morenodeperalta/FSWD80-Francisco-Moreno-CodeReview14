@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+{% block jumbotron %}
+<div class="jumbotron jumbotron-fluid" style="background:url('https://images.unsplash.com/photo-1465060810938-30bbe7c40e76?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60');
+ background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; ">
+  <div class="container">
+    <h1 class="display-4 text-light">Company Title</h1>
+    <h2 class="lead text-light">Landing Page</h2>
+    <a class="btn btn-info btn-lg" href="/" role="button">Enter</a>
+  </div>
+</div>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	
+
+<div class="row row-cols-1 row-cols-md-3">
+<div class="card" style="width: 20rem;">
+  <img src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..." height="300px" width="200px">
+  <div class="card-body">
+  	<div class="d-flex justify-content-center">
+    <h5 class="card-title">Concerts</h5>
+    </div>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="d-flex justify-content-center">
+    	
+    <a href="/event/music" class=" btn btn-outline-info">Discover</a>
+</div>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..." height="300px" width="200px">
+  <div class="card-body">
+  	<div class="d-flex justify-content-center">
+    <h5 class="card-title">Movies</h5>
+    </div>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="d-flex justify-content-center">
+    	
+    <a href="/event/movie" class=" btn btn-outline-info">Discover</a>
+</div>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="..."height="300px" width="200px">
+  <div class="card-body">
+  	<div class="d-flex justify-content-center">
+    <h5 class="card-title">Sports</h5>
+    </div>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="d-flex justify-content-center">
+    	
+    <a href="/event/sport" class=" btn btn-outline-info">Discover</a>
+</div>
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}

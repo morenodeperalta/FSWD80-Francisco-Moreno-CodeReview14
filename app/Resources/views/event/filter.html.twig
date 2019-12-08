@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    
+<div class="row row-cols-1 row-cols-md-2">
+{% for event in filterevent %}
+	<div class="col mb-4" style="max-width:40rem;">
+    <div class="card">
+      <img src="{{event.img}}" class="card-img-top" alt="..." height="400px" width="150px">
+      <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <p class="card-text">{{event.date | date('F-j-Y, g:i a')}}</p>
+        <td> 
+            <div class="d-flex justify-content-center">
+              
+        
+            <a href="/event/details/{{event.id}}" class="btn btn-success">View</a>                 
+            <!-- <a href="/event/edit/{{event.id}}" class="btn btn-default">Edit</a>
+            <a href="/event/delete/{{event.id}}" class="btn btn-danger">Delete</a>         -->
+               </div>
+         </td>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+  </div>
+
+
+{% endblock %}
